@@ -47,7 +47,7 @@ nav{
     align-items: center;
     text-align: center;
     margin: 5% auto 20% auto;
-    width: 50%;
+    width: 70%;
 }
 
 #about a{
@@ -160,11 +160,24 @@ footer{
     }
 
     #about{
-        width: 100%;
+        width: 95%;
     }
 
     .projects-grid{
         grid-template-columns: repeat(1, 1fr);        
+    }
+
+    .project-links:hover{
+        transform: unset;
+        text-decoration: unset;
+    }
+
+    #contacts i:hover{
+        transform: unset;
+    }
+    
+    a:hover{
+        transform: unset;
     }
 }
 
