@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: Nunito Sans;
+    background-color: black;
+    color: white;
+}
+
+header{
+    min-height: 10vh;
+    display: flex;
+    justify-content:space-between;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: white;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease-in;
+
+}
+
+#about a{
+    /* text-decoration: none; */
+    color: white;
+    font-size: 40px;
+}
+
+#projects{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:20px;
+}
+
+.project-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: all 0.4s ease-in;
+}
+
+.project-links h3{
+    margin: 10px 0  0;
+}
+
+.project-links:hover{
+    transform: scale(0.9);
+}
+
+#projects img{
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 0 0 0;
+    opacity: 0;
+    transition: all 0.4s ease-in;
+    color: white;
+    border-style: solid;
+}
+
+#contacts{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+i{
+    color: red;
+}
+
+i:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 425px){
+    #projects{
+        grid-template-columns: repeat(1, 1fr);        
+    }
+}
+
+
