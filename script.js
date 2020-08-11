@@ -1,3 +1,4 @@
+let used = document.querySelector(".used")
 let footer = document.querySelector("footer")
 
 window.addEventListener("scroll", (e)=>{
@@ -15,7 +16,7 @@ window.addEventListener("scroll", (e)=>{
     })
 
 
-    if (footer.getBoundingClientRect().y -50<=window.scrollY){
+    if (footer.getBoundingClientRect().y<=window.scrollY){
         footer.style.opacity = "1";
         footer.style.pointerEvents = "unset"
     }
@@ -23,6 +24,16 @@ window.addEventListener("scroll", (e)=>{
     else{
         footer.style.opacity = "0";
         footer.style.pointerEvents = "none"
+    }
+
+    if(used.getBoundingClientRect().y<=window.scrollY){
+        used.style.opacity = "1";
+        used.style.pointerEvents = "unset"
+    }
+
+    else{
+        used.style.opacity = "0";
+        used.style.pointerEvents = "none"
     }
     console.log(footer.getBoundingClientRect().y<=window.scrollY)
 
